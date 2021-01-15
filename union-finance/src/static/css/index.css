@@ -1,0 +1,5 @@
+body {
+  margin: 0;
+  background: #000000 url('../images/logobg.svg') no-repeat 130% 0vw/60vw auto;
+  font-family: '"Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"';
+}

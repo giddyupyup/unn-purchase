@@ -1,0 +1,33 @@
+const dev = {
+  url: {
+    API_URL: 'http://localhost:3001/api',
+    SYNAPS_API_URL: 'https://workflow-api.synaps.io/v2',
+  },
+  address: {
+    DAI_TOKEN_ADDRESS: '0xCBaA025f3A5B034D1Da076773F3e3937BD5389eb',
+    USDT_TOKEN_ADDRESS: '0xb2357E49b3E19B107e591F7a38b540A6dE245E34',
+    UNION_GOVERNANCE_TOKEN_ADDRESS:
+      '0x89641e36b1B65f42C97855858763C95C7Ac118a4',
+    UNION_PROTOCOL_TOKEN_SALE_ADDRESS:
+      '0xaF555E79d34Cee81D684125f85738BFd5C97Bc63',
+    VOLUNTARY_LOCK_ADDRESS: '0xA3bFb3EF09250BE314A3Dfe93Ba51aC4c4874399',
+  },
+};
+
+const prod = {
+  url: {
+    API_URL: 'https://purchaseapi.unn.finance/api',
+    SYNAPS_API_URL: 'https://workflow-api.synaps.io/v2',
+  },
+  address: {
+    DAI_TOKEN_ADDRESS: '0x6b175474e89094c44da98b954eedeac495271d0f',
+    USDT_TOKEN_ADDRESS: '0xdac17f958d2ee523a2206206994597c13d831ec7',
+    UNION_GOVERNANCE_TOKEN_ADDRESS:
+      '0x226f7b842E0F0120b7E194D05432b3fd14773a9D',
+    UNION_PROTOCOL_TOKEN_SALE_ADDRESS:
+      '0x123B42b4D34C0df01147aab3F747d3dE8270426c',
+    VOLUNTARY_LOCK_ADDRESS: '0x57d55C61a50C53deC5D6224452114464E64d9448',
+  },
+};
+
+export default process.env.NODE_ENV === 'development' ? dev : prod;
